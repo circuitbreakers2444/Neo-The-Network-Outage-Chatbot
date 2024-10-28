@@ -1,0 +1,16 @@
+dash==2.17.1
+dash-bootstrap-components
+databricks-sdk
+python-dotenv
+mistralai
+openai
+together
+langgraph 
+langchain 
+langchain_openai 
+langchain_mistralai 
+langchain_community
+databricks-vectorsearch 
+databricks-sdk==0.18.0 
+mlflow[databricks]
+pyowm
