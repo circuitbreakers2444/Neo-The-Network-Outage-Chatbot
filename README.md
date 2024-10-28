@@ -155,12 +155,12 @@ The project is organized into three main directories:
 
 - **Modular Structure**: Each component is separated for clarity and maintainability, including DatabricksChatbot, ToolFunctions, and DataLoader.
 - **FAQ and Outage Information Handling**: The chatbot uses the `answer_FAQ` tool for frequently asked questions and retrieves planned or unplanned outage information based on the user query.
-- **Weather Integration**: For unplanned outages, the chatbot fetches current weather data from OpenWeatherMap API to estimate outage duration accurately.
+- **Weather Integration**:Uses weather data combined with historical planned outage data to estimate unplanned outage durations, allowing for contextual and dynamic responses.
 
 ### Data Preparation
 
 - **Planned Outage Generation**: Randomly generates planned outages with specific start and end times and outage reasons, merged with postcode-suburb data for location-based queries.
-- **Weather-based Estimation for Unplanned Outages**: Uses weather data to estimate unplanned outage durations, allowing for contextual and dynamic responses.
+- **Weather-based Estimation for Unplanned Outages**: Uses weather data to estimate historicalunplanned outage durations, allowing for contextual and dynamic responses.
 
 ### RAG Integration
 
