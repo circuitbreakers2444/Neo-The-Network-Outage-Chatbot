@@ -160,7 +160,7 @@ The project is organized into three main directories:
 ### Data Preparation
 
 - **Planned Outage Generation**: Randomly generates planned outages with specific start and end times and outage reasons, merged with postcode-suburb data for location-based queries.
-- **Weather-based Estimation for Unplanned Outages**: Uses weather data to estimate historicalunplanned outage durations, allowing for contextual and dynamic responses.
+- **Weather-based Estimation for Unplanned Outages**: Uses weather data to estimate historical unplanned outage durations, allowing for contextual and dynamic responses.
 
 ### RAG Integration
 
