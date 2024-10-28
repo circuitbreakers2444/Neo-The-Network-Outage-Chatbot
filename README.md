@@ -132,7 +132,7 @@ The project is organized into three main directories:
 #### Data
 - **planned_outages.csv**: Contains planned outages data.
 - **postcodes_suburb.csv**: Maps postcodes to suburbs.
-- **past_electricity_outages_unplanned.csv**: Uses weather data combined with historical planned outage data to estimate unplanned outage durations, allowing for contextual and dynamic responses.
+- **past_electricity_outages_unplanned.csv**: Historical data for unplanned outages, used in duration estimation.
 - **system_prompt.txt**: Defines the initial system prompts for chatbot behavior.
 
 ### Data_Prep
