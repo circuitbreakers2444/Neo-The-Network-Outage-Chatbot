@@ -14,6 +14,8 @@ The project is organized into three main directories:
 
 ## Features
 
+![image (2)](https://github.com/user-attachments/assets/ccb85772-d594-4028-8433-7d6fe79d817f)
+
 - **Conversational AI Assistant**: Powered by Databricks and either Mistral or OpenAI GPT models for interactive responses.
 - **Data Preparation and Weather Integration**: Processes planned and unplanned outages data, enriched with weather data for better estimation of unplanned outage durations.
 - **Retrieval-Augmented Generation (RAG)**: Uses Databricks vector search for efficient retrieval of frequently asked questions (FAQ) and outage details.
