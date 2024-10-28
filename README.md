@@ -4,6 +4,32 @@ The **Network Outage Assistant (Neo)** is a web-based chatbot application powere
 
 To maintain modularity, separate files were created for various functionalities, including data handling, chatbot interface, and tools. We used the open-source **Mistral** language model as the primary model for this project, and to benchmark its performance, we used **OpenAI**'s models.
 
+## Project Architecture
+
+![image (2)](https://github.com/user-attachments/assets/ccb85772-d594-4028-8433-7d6fe79d817f)
+
+## Architecture Diagram Description
+
+This architecture diagram illustrates a chatbot system designed for outage-related inquiries, integrated with Databricks. Here's a description of each component:
+
+1. **User**: Interacts with the chatbot interface to obtain outage information.
+
+2. **Chatbot UI**: The user interface where users enter queries and receive responses from the chatbot.
+
+3. **Databricks App**: Acts as an intermediary, connecting the Chatbot UI with the agent layer in Databricks, facilitating data retrieval and response generation.
+
+4. **Agent**: Contains the main components responsible for processing and responding to user queries. This includes:
+   - **Mistral AI**: The primary AI model used for generating responses and managing interactions with various tools.
+   - **LangChain**: A framework that supports the chaining of different AI tools, allowing Mistral AI to access the required resources.
+
+5. **Tools**: A set of APIs and data sources that the agent can access for generating accurate responses. This includes:
+   - **RAG - Databricks Vector Search Index**: A Retrieval-Augmented Generation (RAG) tool integrated with a vector search index on Databricks for efficiently retrieving relevant outage data.
+   - **OpenWeatherMap API**: Provides weather data to help correlate outage information with weather conditions.
+   - **Planned Outages**: A database or API specifically for retrieving data on scheduled outages.
+   - **Unplanned Outages**: A database or API for obtaining data on unexpected or unscheduled outages.
+
+This setup allows the chatbot to handle outage-related queries by pulling information from relevant sources and APIs, using LangChain to route requests and data through Mistral AI for generating user-specific responses.
+
 ## Project Structure
 
 The project is organized into three main directories:
@@ -13,8 +39,6 @@ The project is organized into three main directories:
 - **RAG**: Handles retrieval-augmented generation (RAG) setup, including document processing and testing scripts.
 
 ## Features
-
-![image (2)](https://github.com/user-attachments/assets/ccb85772-d594-4028-8433-7d6fe79d817f)
 
 - **Conversational AI Assistant**: Powered by Databricks and either Mistral or OpenAI GPT models for interactive responses.
 - **Data Preparation and Weather Integration**: Processes planned and unplanned outages data, enriched with weather data for better estimation of unplanned outage durations.
