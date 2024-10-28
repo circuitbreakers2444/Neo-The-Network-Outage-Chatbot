@@ -214,18 +214,7 @@ pyowm
 - **User Interaction**: Enter a postcode and query about an outage. Neo will determine whether the outage is planned or unplanned, provide relevant details, and estimate duration if needed.
 - **Clear Chat**: Use the "Clear" button to reset the conversation.
 
-## Future Enhancements
 
-- **Enhanced Data Visualization**: Add charts to visualize outage statistics within the Dash app.
-- **Additional RAG Features**: Expand the RAG system with more document types and optimized search.
-- **Improved Chatbot Personalization**: Customize responses based on historical user interactions.
-
-## Contributing
-
-1. **Fork the Repository**.
-2. **Create a New Branch**: `git checkout -b feature-name`.
-3. **Commit Changes**: `git commit -m 'Add new feature'`.
-4. **Push to Branch**: `git push origin feature-name`.
 5. **Open a Pull Request**.
 
 
